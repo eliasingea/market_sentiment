@@ -4,7 +4,7 @@ import urllib
 import csv
 from scipy.special import softmax
 import numpy as np
-import tensorflow as tf
+
 
 
 task='sentiment'

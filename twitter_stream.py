@@ -40,7 +40,9 @@ class listener(StreamListener):
             "date_time": created_at, 
             "author": author, 
             "tweet": text, 
-            "sentiment": sentiment
+            "positive_sentiment": sentiment["positive"],
+            "neutral_sentiment": sentiment["neutral"],
+            "negative_sentiment": sentiment["negative"]
         })       
     def on_error(self,status):
         print(status)
